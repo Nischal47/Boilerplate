@@ -14,7 +14,6 @@ export default (
 ) => {
   switch (actions.type) {
     case authActionTypes.INCREASE_COUNTER:
-      console.log("Hello");
       return {
         ...state,
         counter: state.counter + 1,

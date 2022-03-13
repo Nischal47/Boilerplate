@@ -17,6 +17,7 @@ module.exports = {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "no-inline-comments": "error",
+    "no-console": "warn",
   },
   settings: {
     react: {
