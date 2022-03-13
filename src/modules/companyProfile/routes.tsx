@@ -1,9 +1,9 @@
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 
 const CompanyProfileRoutes = () => (
-    <Routes>
-        <Route path="/" element={<CompanyProfileRoutes />}/>
-    </Routes>
-)
+  <Routes>
+    <Route path="/" element={<CompanyProfileRoutes />} />
+  </Routes>
+);
 
-export default CompanyProfileRoutes
+export default CompanyProfileRoutes;
