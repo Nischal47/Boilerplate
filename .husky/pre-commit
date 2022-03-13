@@ -23,4 +23,4 @@ npm run check-types ||
 )
 
 # If everything passes... Now we can commit
-echo 'Check Passed. Committing to origin'
+echo 'Check Passed. Creating Commit'
