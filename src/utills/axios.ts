@@ -32,7 +32,7 @@ export const callAxios = async ({
     },
     data,
     params,
-    timeout: 20000, // 20 seconds
+    timeout: 20000,
   };
   return axios(config)
     .then((res: AxiosResponse<any, any>) => {
