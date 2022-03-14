@@ -1,5 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-import SuperUserPage from "../companyProfile/pages/superUserPage";
+import { Routes, Route } from 'react-router-dom';
+import SuperUserPage from '../companyProfile/pages/superUserPage';
 
 const SuperUserRoutes = () => (
   <Routes>

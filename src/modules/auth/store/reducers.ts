@@ -1,4 +1,4 @@
-import { authAction, authActionTypes } from "./actionTypes";
+import { authAction, authActionTypes } from './actionTypes';
 
 interface InitialStateProps {
   counter: number;

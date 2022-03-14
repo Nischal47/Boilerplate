@@ -1,7 +1,7 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import CompanyProfileRoutes from "../modules/companyProfile/routes";
-import SuperUserRoutes from "../modules/superUser/routes";
-import Role from "../enums/roles";
+import { Navigate, Route, Routes } from 'react-router-dom';
+import CompanyProfileRoutes from '../modules/companyProfile/routes';
+import SuperUserRoutes from '../modules/superUser/routes';
+import Role from '../enums/roles';
 
 interface PrivateRoutesProps {
   isLoggedIn: boolean;
@@ -11,7 +11,7 @@ interface PrivateRoutesProps {
 const PrivateRoute = (props: PrivateRoutesProps) => {
   const { role } = props;
   const { isLoggedIn } = props;
-  const routeToAuth = "auth";
+  const routeToAuth = 'auth';
 
   return (
     <Routes>

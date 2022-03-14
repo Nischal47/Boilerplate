@@ -1,5 +1,5 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import AuthRoute from "../modules/auth/routes";
+import { Routes, Route, Navigate } from 'react-router-dom';
+import AuthRoute from '../modules/auth/routes';
 
 interface PublicRouteProps {
   isLoggedIn: boolean;

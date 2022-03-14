@@ -1,11 +1,11 @@
-import { successToast } from "../../../utills/toast";
-import { toast } from "react-toastify";
-import "../styles.scss";
-import Counter from "../components/counter";
+import { successToast } from '../../../utills/toast';
+import { toast } from 'react-toastify';
+import '../styles.scss';
+import Counter from '../components/counter';
 
 const Login = () => {
   const success = () => {
-    toast("Success", successToast);
+    toast('Success', successToast);
   };
 
   return (

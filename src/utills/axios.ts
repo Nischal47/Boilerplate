@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse, Method } from "axios";
+import axios, { AxiosRequestConfig, AxiosResponse, Method } from 'axios';
 
 interface CallAxiosAPI {
   url: string;
@@ -18,16 +18,16 @@ export const callAxios = async ({
   headers,
   params,
 }: CallAxiosAPI) => {
-  const token = await localStorage.getItem("CPQ_ACCESS_TOKEN");
+  const token = await localStorage.getItem('CPQ_ACCESS_TOKEN');
   const accessToken = token !== null ? JSON.parse(token) : null;
 
   const config: AxiosRequestConfig = {
-    method: method || "GET",
+    method: method || 'GET',
     url: `${baseUrl}${url}`,
     headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-      Authorization: accessToken !== null ? `Bearer ${accessToken}` : "",
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      Authorization: accessToken !== null ? `Bearer ${accessToken}` : '',
       ...headers,
     },
     data,

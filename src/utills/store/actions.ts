@@ -1,1 +1,1 @@
-export * from "../../modules/auth/store/actions";
+export * from '../../modules/auth/store/actions';

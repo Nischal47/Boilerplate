@@ -1,6 +1,6 @@
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../../utills/store/reducers";
-import { decreaseCounter, increaseCounter } from "../store/actions";
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../utills/store/reducers';
+import { decreaseCounter, increaseCounter } from '../store/actions';
 
 const Counter = () => {
   const dispatch = useDispatch();

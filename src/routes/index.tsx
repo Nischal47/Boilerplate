@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import PublicRoutes from "./publicRoutes";
-import PrivateRoute from "./privateRoutes";
-import Role from "../enums/roles";
+import { useState } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import PublicRoutes from './publicRoutes';
+import PrivateRoute from './privateRoutes';
+import Role from '../enums/roles';
 
 const MainRoute = () => {
   const [isLoggedIn] = useState<boolean>(false);
   const [role] = useState<string>(Role.user);
-  const setDefaultPath = isLoggedIn ? "/" : "/auth";
+  const setDefaultPath = isLoggedIn ? '/' : '/auth';
 
   return (
     <Routes>

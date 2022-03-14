@@ -1,4 +1,4 @@
-import { authActionTypes } from "./actionTypes";
+import { authActionTypes } from './actionTypes';
 
 export const increaseCounter = () => {
   return {
