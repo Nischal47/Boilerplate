@@ -1,5 +1,5 @@
-import { successToast } from '../../../utills/toast';
 import { toast } from 'react-toastify';
+import { successToast } from '../../../utills/toast';
 import '../styles.scss';
 import Counter from '../components/counter';
 
@@ -12,7 +12,7 @@ const Login = () => {
     <>
       <h1>Login</h1>
       <Counter />
-      <button onClick={success}>success toast</button>
+      <button type='button' onClick={success}>success toast</button>
     </>
   );
 };

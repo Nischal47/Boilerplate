@@ -1,6 +1,6 @@
-const Role = {
-  user: 'user',
-  superAdmin: 'super-admin',
+enum ROLES {
+  USER = 1,
+  ADMIN,
 };
 
-export default Role;
+export default ROLES;

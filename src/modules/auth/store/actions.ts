@@ -1,13 +1,9 @@
 import { authActionTypes } from './actionTypes';
 
-export const increaseCounter = () => {
-  return {
+export const increaseCounter = () => ({
     type: authActionTypes.INCREASE_COUNTER,
-  };
-};
+  });
 
-export const decreaseCounter = () => {
-  return {
+export const decreaseCounter = () => ({
     type: authActionTypes.DECREASE_COUNTER,
-  };
-};
+  });

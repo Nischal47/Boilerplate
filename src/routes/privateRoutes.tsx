@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import CompanyProfileRoutes from '../modules/companyProfile/routes';
 import SuperUserRoutes from '../modules/superUser/routes';
-import Role from '../enums/roles';
+import ROLES from '../enums/roles';
 
 interface PrivateRoutesProps {
   isLoggedIn: boolean;
-  role: string;
+  role: number;
 }
 
 const PrivateRoute = (props: PrivateRoutesProps) => {
@@ -15,13 +15,13 @@ const PrivateRoute = (props: PrivateRoutesProps) => {
 
   return (
     <Routes>
-      {role === Role.superAdmin && (
+      {role === ROLES.ADMIN && (
         <Routes>
-          <Route path="/super-user" element={<SuperUserRoutes />} />
+          <Route path="/admin" element={<SuperUserRoutes />} />
           <Route path="/" element={<CompanyProfileRoutes />} />
         </Routes>
       )}
-      {role === Role.user && (
+      {role === ROLES.USER && (
         <Route path="/" element={<CompanyProfileRoutes />} />
       )}
       <Route
