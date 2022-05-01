@@ -4,5 +4,4 @@ import './App.scss';
 
 const App = () => (<MainRoute />)
 
-
 export default App;
