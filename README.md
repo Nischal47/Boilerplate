@@ -44,3 +44,25 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## How to Write Commit Message
+
+Commit message should be in form of
+
+type: description
+[body]
+[footer]
+
+### Available Types
+
+- Feature
+- BugFix
+- StyleChange
+- Refactoring
+- Docs
+- Improvement
+- ConfigurationChanges
+- Test
+- Chore
+- Revert
+
